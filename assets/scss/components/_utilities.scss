@@ -1,0 +1,16 @@
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+// animation utilities
+$delay-base: 0.3s;
+
+.animate__animated.animateDelay-custom {
+    animation-delay: $delay-base;
+}
+
+.animate__animated.animateDelay-custom-lg {
+    animation-delay: $delay-base *2;
+}

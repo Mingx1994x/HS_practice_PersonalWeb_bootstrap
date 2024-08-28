@@ -1,0 +1,9 @@
+.navLink a {
+  color: #D1D1D1;
+  display: block;
+  padding: 40px 0;
+
+  &:hover {
+    color: $primary
+  }
+}

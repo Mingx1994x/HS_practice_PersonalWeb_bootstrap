@@ -1,0 +1,81 @@
+// btn
+.pillBtn {
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.cus-light-btn {
+    background-color: $white;
+    color: $dark;
+    transition: .5s;
+
+    &:hover {
+        color: $white;
+        background-color: $dark;
+
+        path {
+            fill: $primary;
+        }
+    }
+
+    &:active {
+        color: $white;
+        background-color: $primary;
+
+        path {
+            fill: $white;
+        }
+    }
+}
+
+.cus-dark-btn {
+    background-color: $dark;
+    color: $white;
+    transition: .5s;
+
+    &:hover {
+        color: $primary;
+
+        path {
+            fill: $primary;
+        }
+    }
+
+    &:active {
+        color: $dark;
+        background-color: $primary;
+
+        path {
+            fill: $dark;
+        }
+    }
+}
+
+//custom animate mask 偽元素
+[data-aos="dark-mask"] {
+    position: relative;
+}
+
+[data-aos="dark-mask"]::after {
+    content: '';
+    background-color: $dark;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .8s
+}
+
+[data-aos="dark-mask"].animate__animated::after {
+    width: 0;
+}
+
+[data-gsap="mask"] {
+    overflow-y: hidden;
+    height: 100%;
+    // height: 100%;
+}
